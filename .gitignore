@@ -1,0 +1,91 @@
+# ----------------------------
+# Maven / Java Project Ignore
+# ----------------------------
+
+# Maven target directory
+/target/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+
+# ----------------------------
+# IDE Specific Ignores
+# ----------------------------
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ----------------------------
+# OS Generated Files
+# ----------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ----------------------------
+# Other Optional Ignores
+# ----------------------------
+
+# Environment files
+.env
+*.env
+
+# Temporary build/test data
+*.csv
+*.dat
+*.out
+*.tmp
+
+# ----------------------------
+# Keep these important files
+# ----------------------------
+
+!pom.xml
+!README.md
+!docs/

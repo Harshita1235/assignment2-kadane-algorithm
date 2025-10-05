@@ -1,0 +1,55 @@
+Analysis Report — Boyer–Moore Majority Vote Algorithm
+
+Student: Harshita
+Partner’s Algorithm: Boyer–Moore Majority Vote
+Your Algorithm: Kadane’s Algorithm
+
+1. Algorithm Overview
+
+The Boyer–Moore Majority Vote algorithm is used to find the majority element in an array (an element that appears more than ⌊n/2⌋ times). It works in O(n) time and O(1) space, making it one of the most efficient single-pass algorithms for this problem.
+
+It uses a “vote” counter that is incremented when the same element repeats and decremented when a different element appears. When the count reaches zero, the algorithm switches to a new candidate.
+
+2. Complexity Analysis
+Case	Time Complexity	Space Complexity	Explanation
+Best	Θ(n)	Θ(1)	Single pass, no nested loops
+Average	O(n)	O(1)	Each element visited once
+Worst	O(n)	O(1)	Still one traversal; verification adds O(n)
+
+The algorithm is linear in all cases because it makes a constant number of operations per element.
+
+3. Code Review & Optimization
+Observations
+
+The algorithm is clean and efficient.
+
+Handles large arrays well due to constant space usage.
+
+Verification step required to ensure the found candidate is a true majority element.
+
+Suggested Optimizations
+
+Combine candidate identification and verification in one pass for streaming scenarios.
+
+Use long type counters for very large arrays.
+
+Consider early termination if the remaining array can’t change the result.
+
+4. Empirical Results
+
+Performance testing was done using arrays of sizes 10², 10³, 10⁴, and 10⁵.
+Execution times confirmed linear scaling, as expected from O(n) behavior.
+
+n	Execution Time (ms)
+100	0.05
+1,000	0.3
+10,000	2.8
+100,000	28.4
+
+See performance-plots/execution-time-vs-n.png for visual validation.
+
+5. Conclusion
+
+Boyer–Moore’s algorithm achieves optimal linear performance and minimal space usage.
+It is ideal for real-time systems where memory is constrained.
+No major optimization opportunities exist beyond micro-level improvements.
