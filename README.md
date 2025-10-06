@@ -1,6 +1,6 @@
 # Assignment 2 – Kadane’s Algorithm  
 **Course:** Algorithmic Analysis and Peer Code Review  
-**Student:** [Your Name]  
+**Student:** HARSHITA.  
 **Pair:** Pair 3 – Linear Array Algorithms  
 **Role:** Student B – Kadane’s Algorithm  
 
